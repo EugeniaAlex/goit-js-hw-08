@@ -1,6 +1,9 @@
 // Add imports above this line
 import { galleryItems } from './gallery-items';
 // Change code below this line
+import SimpleLightbox from 'simplelightbox';
+
+import 'simplelightbox/dist/simple-lightbox.min.css';
 
 console.log(galleryItems);
 
@@ -22,16 +25,10 @@ const makeGaleryElements = galleryItems.map(makeGaleryElementMarkup).join('');
 
 divGaleryEl.insertAdjacentHTML('beforeend', makeGaleryElements);
 
+let gallery = new SimpleLightbox('.gallery a', { captionsData: "alt", captionPosition: "bottom", captionDelay: "500"});
 
-divGaleryEl.addEventListener('click', onImageClick);
 
-function onImageClick(event) {
     
-    event.preventDefault();
     
-//     let gallery = new SimpleLightbox('.gallery a');
-// gallery.on('show.simplelightbox', function () {
-//     captionsData: `img`; captionDelay: `250`; 
-// });
 
-};
+
