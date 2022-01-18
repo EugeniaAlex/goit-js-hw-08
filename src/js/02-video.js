@@ -23,20 +23,6 @@ if (localStorage.getItem('videoplayer-current-time')) {
 
 
 
-// function onPlayVideo(data) { 
-//     const savedCurrentTime = localStorage.getItem('videoplayer-current-time');
-//     if (savedCurrentTime) { 
-//         data.seconds = JSON.parse(savedCurrentTime);
-//     };
-// };
-
-// function onVideoHappyEnd(data) {
-//     localStorage.removeItem('videoplayer-current-time');
-// }
-
-// player.on('play', onPlayVideo);    
-
-// player.on('ended', onVideoHappyEnd);
 
 
 
@@ -45,6 +31,3 @@ if (localStorage.getItem('videoplayer-current-time')) {
 
 
 
-    // player.getVideoTitle().then(function(title) {
-    //     console.log('title:', title);
-    // });
